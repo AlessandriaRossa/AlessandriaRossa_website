@@ -1,7 +1,7 @@
 +++
 draft = false
 title = 'Elenco delle letture'
-summary = 'Elenco dei testi teorici, dagli argomenti per principianti ad quelli avanzati'
+summary = 'Elenco di letture fondamentali, a partire dagli argomenti per principianti'
 +++
 
 *i testi in corsivo sono essenziali*
