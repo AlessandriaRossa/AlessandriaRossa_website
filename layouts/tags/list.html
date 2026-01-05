@@ -1,0 +1,85 @@
+{{ define "main" }}
+
+<style>
+    .tag-container {
+        max-width: 900px;
+        margin: 90px auto 40px auto;
+        padding: 0 20px;
+        font-family: system-ui, Arial, sans-serif;
+    }
+
+    .tag-header {
+        margin-bottom: 30px;
+    }
+
+    .tag-title {
+        font-size: 2rem;
+        margin: 0 0 10px 0;
+    }
+
+    .tag-description {
+        font-size: 1.1rem;
+        color: #555;
+        margin: 0 0 20px 0;
+    }
+
+    .tag-item {
+        padding: 18px 22px;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fafafa;
+    }
+
+    .tag-item-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .tag-item-title:hover {
+        text-decoration: underline;
+    }
+
+    .tag-summary {
+        font-size: 1.05rem;
+        color: #444;
+    }
+</style>
+
+<main class="tag-container">
+
+    <header class="tag-header">
+        <h1 class="tag-title">
+            Posts tagged “{{ .Title }}”
+        </h1>
+
+        {{ with .Content }}
+        <p class="tag-description">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <section class="tag-items">
+
+        {{ range .RegularPages }}
+        <article class="tag-item">
+            <a class="tag-item-title" href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+
+            {{ with .Summary }}
+            <p class="tag-summary">{{ . }}</p>
+            {{ end }}
+        </article>
+        {{ end }}
+
+        {{ if not .RegularPages }}
+        <p>No posts found for this tag.</p>
+        {{ end }}
+
+    </section>
+
+</main>
+
+{{ end }}

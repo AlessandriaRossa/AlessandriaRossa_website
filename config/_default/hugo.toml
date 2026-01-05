@@ -1,0 +1,31 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Alessandria Rossa'
+[languages]
+  [languages.it]
+    languageCode = 'it-IT'
+    languageDirection = 'ltr'
+    contentDir = 'content/it'
+    languageName = 'Italiano'
+    weight = 1
+    [languages.it.params]
+      subtitle = 'Sezione Italiana'
+  [languages.en]
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    contentDir = 'content/en'
+    languageName = 'English'
+    weight = 2
+    [languages.en.params]
+      subtitle = 'English Section'
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+[params]
+  email = 'alessandriarossa@tutamail.com'
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  taxonomyTerm = ["HTML"]

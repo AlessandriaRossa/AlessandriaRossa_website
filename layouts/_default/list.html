@@ -1,0 +1,128 @@
+{{ define "main" }}
+
+<style>
+  /* Container */
+  .list-container {
+    max-width: 900px;
+    margin: 90px auto 40px auto;
+    padding: 0 20px;
+    font-family: system-ui, Arial, sans-serif;
+  }
+
+  /* Page header */
+  .list-header {
+    margin-bottom: 30px;
+  }
+
+  .list-title {
+    font-size: 2.3rem;
+    margin: 0 0 10px;
+  }
+
+  /* Each list item */
+  .list-item {
+    padding: 18px 22px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .list-item:hover {
+    background: #f0f0f0;
+    border-color: #ccc;
+  }
+
+  /* Title link */
+  .list-item-title {
+    font-size: 1.4rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .list-item-title:hover {
+    text-decoration: underline;
+  }
+
+  /* Meta info */
+  .list-meta {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 4px 0 10px 0;
+  }
+
+  /* Summary */
+  .list-summary {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin: 0 0 10px 0;
+    color: #444;
+  }
+
+  /* Tags */
+  .list-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .list-tags a {
+    font-size: 0.85rem;
+    background: #e0e0e0;
+    color: #333;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+  }
+
+  .list-tags a:hover {
+    background: #ccc;
+  }
+</style>
+
+<main class="list-container">
+
+  <header class="list-header">
+    <h1 class="list-title">{{ .Title }}</h1>
+  </header>
+
+  <section class="list-items">
+
+    {{ .Content }}
+
+    {{ range first 5 (sort (where .Site.RegularPages "Section" "posts") "Date" "desc") }}
+    <article class="list-item">
+
+      <a class="list-item-title" href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+
+      {{ with .Date }}
+      <div class="list-meta"><time>{{ .Format "January 2, 2006" }}</time></div>
+      {{ end }}
+
+      <p class="list-summary">
+        {{ if .Summary }}
+        {{ .Summary }}
+        {{ end }}
+      </p>
+
+      {{ with .Params.tags }}
+      <div class="list-tags">
+        {{ range . }}
+        <a href="/tags/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </article>
+    {{ end }}
+
+  </section>
+
+</main>
+
+{{ end }}
