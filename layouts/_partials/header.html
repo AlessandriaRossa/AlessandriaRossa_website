@@ -9,7 +9,6 @@
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
-    /* allows wrapping on small screens */
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -70,7 +69,6 @@
   body {
     margin: 0;
     padding-top: 65px;
-    /* space for fixed header */
   }
 
   @media (max-width: 600px) {
@@ -128,7 +126,6 @@
     color: white;
   }
 
-  /* Show dropdown on hover */
   .lang-dropdown:hover .lang-list {
     display: block;
   }
@@ -141,11 +138,10 @@
 
   <div class="nav-group">
 
-    <nav class="nav-links">
-      <a href="/AlessandriaRossa_website/tags/">{{ i18n "tags" }}</a>
-      <a href="/AlessandriaRossa_website/resources/">{{ i18n "resources" }}</a>
-    </nav>
-
+  <nav class="nav-links">
+    <a href="{{ "tags/" | relLangURL }}">{{ i18n "tags" }}</a>
+    <a href="{{ "resources/" | relLangURL }}">{{ i18n "resources" }}</a>
+  </nav>
 
     <nav class="lang-dropdown">
       <span class="lang-current">Language ▾</span>
