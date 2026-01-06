@@ -21,7 +21,7 @@ summary = 'Elenco di letture fondamentali'
 - [Dialogato con Stalin - PCInt](https://www.quinterna.org/pubblicazioni/storici/dialogatostalin.htm)
 # Materialismo Storico / Socialismo Scientifico
 - *[L'evoluzione del socialismo dall'utopia alla scienza - Engels](https://www.marxists.org/italiano/marx-engels/1880/evoluzione/index.htm)*
-- ~~Ideologia tedesca - Marx, Engels~~
+- [Ideologia tedesca - Marx, Engels](https://archive.org/details/lideologia-tedesca-1975-editori-riuniti/mode/2up)
 - [L'origine della famiglia, della proprietà privata e dello Stato - Engels](https://www.marxists.org/italiano/marx-engels/1884/famiglia/index.htm)
 - [La questione delle abitazioni - Engels](https://www.marxists.org/italiano/marx-engels/1872/abitazioni/index.htm)
 - [Il 18 Brumaio di Luigi Bonaparte - Marx](https://www.marxists.org/italiano/marx-engels/1852/brumaio/index.htm)
@@ -40,7 +40,9 @@ summary = 'Elenco di letture fondamentali'
 - *[Stato e Rivoluzione - Lenin](https://www.marxists.org/italiano/lenin/1917/stat-riv/index.htm)*
 - [Appunti sul libro di Bakunin "Stato e anarchia" - Marx](https://www.marxists.org/italiano/marx-engels/1875/inizi/baku.htm) 
 # Dialettica
-- ~~Ludwig Feuerbach e la fine della filosofia tedesca classica - Engels~~
+- [Ludwig Feuerbach e la fine della filosofia tedesca classica - Engels](http://www.filosofia.it/archivio/images/download/ebook/Engels_su_Feuerbach1888.pdf)
 - [Sacra famiglia - Marx, Engels](https://www.marxists.org/italiano/marx-engels/1844/sacra-famiglia/index.htm)
 - ~~Critica alla filosofia del diritto di Hegel - Marx~~
-- ~~Scienza della logica - Hegel~~
+- [Scienza della logica Vol 1 - Hegel](https://archive.org/details/ScienzaDellaLogicaVol1/mode/1up)
+- [Scienza della logica Vol 2 - Hegel](https://archive.org/details/ScienzaDellaLogicaVol2/mode/1up)
+- [Scienza della logica Vol 3 - Hegel](https://archive.org/details/ScienzaDellaLogicaVol3/mode/1up)
