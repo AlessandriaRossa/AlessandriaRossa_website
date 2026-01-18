@@ -1,4 +1,4 @@
-baseURL = '/AlessandriaRossa_website/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'Alessandria Rossa'
 [languages]
