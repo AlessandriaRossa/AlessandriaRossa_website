@@ -62,20 +62,20 @@
       <h1 class="article-title">{{ .Title }}</h1>
       
       {{ with .Params.original_report }}
-        <p class="article-subtitle">
+        <p class="article-subtitle" style="margin-top: 8px; color: #555;">
           Original text: 
           <a href="{{ . }}" target="_blank">
-            {{ $.Params.original_title }}
+            <strong>{{ $.Params.original_title }}</strong>
           </a>
         </p>
       {{ end }}
 
-{{ with .Params.original_date }}
-  <p class="article-subtitle" style="margin-top: 8px; color: #555;">
-    Original publication date: 
-    <strong>{{ . }}</strong>
-  </p>
-{{ end }}
+      {{ with .Params.original_date }}
+        <p class="article-subtitle" style="margin-top: 8px; color: #555;">
+          Original publication date: 
+          <strong>{{ . }}</strong>
+        </p>
+      {{ end }}
 
       <div class="article-meta">
         {{ with .Date }}
