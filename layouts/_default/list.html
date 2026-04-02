@@ -113,7 +113,7 @@
       {{ with .Params.tags }}
       <div class="list-tags">
         {{ range . }}
-        <a href="/tags/{{ . | urlize }}/">{{ . }}</a>
+        <a href="{{ (printf "/tags/%s/" (. | urlize)) | relLangURL }}">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}
