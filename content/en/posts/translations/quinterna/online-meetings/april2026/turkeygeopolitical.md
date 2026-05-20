@@ -1,7 +1,7 @@
 +++
 date = '2026-05-20T22:05:24+02:00'
 draft = false
-title = 'Türkiye as Geopolitical Fulcrum'
+title = 'Türkiye as a Geopolitical Fulcrum'
 summary = ''
 tags = ['translation', 'quinterna', 'teleriunione', 'april 2026']
 original_report = "https://www.quinternalab.org/teleriunioni/2026/aprile-2026/980-la-turchia-come-fulcro-geopolitico"
