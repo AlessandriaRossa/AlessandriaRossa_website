@@ -70,14 +70,10 @@
   }
 </style>
 
-<main class="tag-container">
+<main>
   <header class="tag-header">
-    <h1 class="tag-title">{{ .Title }}</h1>
-    {{ with .Content }}
-    <p class="tag-description">{{ . }}</p>
-    {{ end }}
   </header>
-    {{ $page := site.GetPage "posts/my-file" }}
+    {{ $page := site.GetPage "contact.md" }}
     {{ $page.Content }}
 </main>
 
