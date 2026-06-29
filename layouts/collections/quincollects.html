@@ -80,7 +80,12 @@
   <section class="teleriunione-items">
 
     {{ .Content }}
-    {{ $months := slice (.Site.GetPage "/collections/translations/quinterna/Teleriunione/february2026") (.Site.GetPage "/collections/translations/quinterna/Teleriunione/march2026") (.Site.GetPage "/collections/translations/quinterna/Teleriunione/april2026") }}
+    {{ $months := slice 
+      (.Site.GetPage "/collections/translations/quinterna/Teleriunione/february-2026")
+      (.Site.GetPage "/collections/translations/quinterna/Teleriunione/march-2026")
+      (.Site.GetPage "/collections/translations/quinterna/Teleriunione/april-2026") 
+      (.Site.GetPage "/collections/translations/quinterna/Teleriunione/may-2026")
+    }}
 
     {{ range $months }}
       <article class="teleriunione-item">
